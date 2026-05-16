@@ -1,2 +1,2 @@
 # templeytngwebshop.github.io
-Para bumilis kang mag ticket parans si boss Chicks. 
+Para bumilis kang mag ticket parang si boss Chicks. 
