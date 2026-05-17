@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #87CEEB;
+}
+
+#loginPage {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 320px;
+
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  color: #0077aa;
+  text-align: center;
+}
+
+.logo.small {
+  font-size: 24px;
+}
+
+.login-box input {
+  width: 95%;
+  padding: 12px;
+  margin: 10px 0;
+
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #0077aa;
+  color: white;
+
+  cursor: pointer;
+}
+
+#app {
+  display: none;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+
+  background: #ffffff;
+  float: left;
+
+  padding: 15px;
+  overflow-y: auto;
+
+  border-right: 2px solid #ddd;
+}
+
+.sidebar button {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #87CEEB;
+  cursor: pointer;
+}
+
+.main {
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toolbar {
+  background: #d8f1ff;
+  padding: 10px;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toolbar button,
+.toolbar select,
+.toolbar input {
+  padding: 8px;
+}
+
+#tabs {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background: #eef9ff;
+  overflow-x: auto;
+}
+
+.tab {
+  padding: 10px 20px;
+  background: #0077aa;
+  color: white;
+
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#noteTitle {
+  padding: 15px;
+  border: none;
+
+  font-size: 24px;
+  outline: none;
+
+  background: transparent;
+}
+
+#editor {
+  flex: 1;
+  background: white;
+  margin: 10px;
+  padding: 20px;
+
+  border-radius: 12px;
+  overflow-y: auto;
+
+  outline: none;
+}
+
+#imageContainer img {
+  width: 160px;
+  margin: 10px;
+  border-radius: 12px;
+}

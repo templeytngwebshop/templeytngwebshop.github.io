@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Templaeytng Webshop Notes</title>
+
+  <!-- Brush Script Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage">
+
+  <div class="login-box">
+
+    <h1 class="logo">
+      Templaeytng Webshop
+    </h1>
+
+    <input type="text"
+           id="username"
+           placeholder="Username">
+
+    <input type="password"
+           id="password"
+           placeholder="Password">
+
+    <button onclick="registerUser()">
+      Register
+    </button>
+
+    <button onclick="loginUser()">
+      Login
+    </button>
+
+  </div>
+
+</div>
+
+<!-- APP -->
+<div id="app">
+
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+
+    <h1 class="logo small">
+      Templaeytng Webshop
+    </h1>
+
+    <button onclick="createNotebook()">
+      + New Notebook
+    </button>
+
+    <div id="notebooks"></div>
+
+  </div>
+
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- TOOLBAR -->
+    <div class="toolbar">
+
+      <input type="text"
+             id="search"
+             placeholder="Search notes..."
+             onkeyup="searchNotes()">
+
+      <select onchange="setFontSize(this.value)">
+        <option value="16px">16</option>
+        <option value="20px">20</option>
+        <option value="24px">24</option>
+        <option value="30px">30</option>
+      </select>
+
+      <input type="color"
+             onchange="setFontColor(this.value)">
+
+      <button onclick="formatText('bold')">
+        Bold
+      </button>
+
+      <button onclick="formatText('italic')">
+        Italic
+      </button>
+
+      <button onclick="formatText('underline')">
+        Underline
+      </button>
+
+      <input type="file"
+             id="imageUpload"
+             accept="image/*">
+
+      <button onclick="saveNote()">
+        Save
+      </button>
+
+    </div>
+
+    <!-- TABS -->
+    <div id="tabs"></div>
+
+    <!-- TITLE -->
+    <input type="text"
+           id="noteTitle"
+           placeholder="Page Title">
+
+    <!-- EDITOR -->
+    <div id="editor"
+         contenteditable="true">
+    </div>
+
+    <!-- IMAGE AREA -->
+    <div id="imageContainer"></div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
